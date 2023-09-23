@@ -1,0 +1,90 @@
+GET http://localhost:8080/usuarios HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:8080/usuarios/usuario1 HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:8080/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Filipe",
+    "idade": 60
+}
+###
+PATCH http://localhost:8080/usuarios/usuario2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Gabriel"
+}
+
+###
+DELETE http://localhost:8080/usuarios/-NezdRUhN2C_Pjn2iF7v HTTP/1.1
+Content-Type: application/json
+###
+
+
+
+GET http://localhost:8080/livros HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:8080/livros/-NezYtPkEznRvstm14nY HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:8080/livros HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Mushoku",
+    "genero": "Mangá"
+}
+###
+PUT http://localhost:8080/livros/-NezafwW1SOBBmg4hdZS HTTP/1.1
+Content-Type: application/json
+
+{
+    "genero": "Mangá"
+}
+###
+
+DELETE http://localhost:8080/livros/-Nez_njubLCLpQtwQL8U HTTP/1.1
+Content-Type: application/json
+###
+
+
+
+GET http://localhost:8080/generos HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:8080/generos/genero1 HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:8080/generos HTTP/1.1
+Content-Type: application/json
+
+{   
+    "genero": "Shojo"
+}
+
+###
+PUT http://localhost:8080/generos/-Nezc-_hW5l6ikjJWl6G HTTP/1.1
+Content-Type: application/json
+
+{
+    "genero": "Josei"
+}
+###
+
+DELETE http://localhost:8080/generos/-Nezc-_hW5l6ikjJWl6G HTTP/1.1
+Content-Type: application/json
+###
+
+
+
